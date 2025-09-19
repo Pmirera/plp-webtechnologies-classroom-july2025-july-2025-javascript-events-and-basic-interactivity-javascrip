@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Pages Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Interactive Web Page 🎉</h1>
+    <button id="modeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Counter Game -->
+  <section>
+    <h2>Counter Game 🎮</h2>
+    <button id="decreaseBtn">-</button>
+    <span id="counter">0</span>
+    <button id="increaseBtn">+</button>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>FAQ ❓</h2>
+    <button class="faq-toggle">What is JavaScript?</button>
+    <p class="faq-answer">JavaScript is a programming language that makes web pages interactive.</p>
+
+    <button class="faq-toggle">What is DOM?</button>
+    <p class="faq-answer">DOM stands for Document Object Model. It lets JS interact with HTML/CSS.</p>
+  </section>
+
+  <!-- Form Validation -->
+  <section>
+    <h2>Sign Up Form 📝</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name"><span class="error" id="nameError"></span><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email"><span class="error" id="emailError"></span><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password"><span class="error" id="passwordError"></span><br>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="successMsg"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
